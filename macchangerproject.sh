@@ -3,7 +3,7 @@ clear
 
 echo "What would you like your new mac to be? exp. 00:11:22:33:44:55"
 
-read $newmac
+read newmac
 # creates the mac to be changed to
 
 echo
@@ -12,7 +12,7 @@ echo "Cool let us change that mac"
 echo
 
 ifconfig eth0 down
-macchanger --mac=$newmac wlan0
+macchanger --mac $newmac wlan0
 ifconfig eth0 up
 #changes mac
 
