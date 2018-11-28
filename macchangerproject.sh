@@ -12,7 +12,7 @@ echo "Cool let us change that mac"
 echo
 
 ifconfig eth0 down
-macchanger --mac $newmac wlan0
+macchanger --mac $newmac eth0
 ifconfig eth0 up
 #changes mac
 
