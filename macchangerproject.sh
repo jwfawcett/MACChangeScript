@@ -15,8 +15,9 @@ ifconfig eth0 down
 macchanger --mac $newmac eth0
 ifconfig eth0 up
 #changes mac
+echo
 
-echo"Your new mac address is"
+echo "Your new mac address is"
 ifconfig | grep ether
 #gathers new mac 
 #by John Fawcett
